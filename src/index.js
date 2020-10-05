@@ -1,5 +1,10 @@
 module.exports = function reverse (n) {
-  if (n < 0) return -reverse(-n); 
-  let revNum = n.toString().split('').reverse().join("");
-  return Number(revNum);
+  let result = '';
+  if (number === 0) return 0;
+  if (number < 0) return -reverseInt(-number);
+  while (number > 0){
+   result = result + (number%10);
+   number = parseInt(number/10);
+  }
+  return result;
 }
